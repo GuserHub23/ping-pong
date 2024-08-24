@@ -7,24 +7,24 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
-    <div id="canvasCont">
-        <canvas id="canvas"></canvas>
-            <div id="infoCont">
-                <div class="cont"><p class="title" style="color: #ff0303">YOU</p><p class="out" id="you">23</p></div>
-                <div class="cont"><p class="title">STEPS</p><p class="out" id="steps">23</p></div>
-                <div class="cont"><p class="title" style="color: #68534c" >AI</p><p class="out" id="ai">23</p></div>
-            </div>
-            <div id="buttonAndBlur">
-                <button type="button" class="nes-btn" id="btnFirst">Play</button>
-                <div class="nes-container with-title is-centered" id="secondCont">
-                    <p class="title">Lets start</p>
-                    <p>Your snake is <span id="urColor"> this color</span>, AI snake <span id="aiColor"> is this color</span>.</p>
-                    <p>Press WASD to control your snake</p>
-                    <button type="button" class="nes-btn" id="btnSecond">Play</button>
-                </div>
-            </div>
-
+    <div id="wrap">
+        <div id="startMenu">
+          <h1>Pong</h1>
+          <button id="startBtn">Start</button>
+        </div>
+        <div id="pauseMenu">
+          <h1>Pause</h1>
+          <button id="continueBtn">Continue</button>
+          <button id="restartBtn">Restart</button>
+        </div>
+        <div id="gameOverMenu">
+          <h1 id="gameMessage"></h1>
+          <button id="againBtn">Try again</button>
+        </div>
+        <div id="gameplay">
+          <canvas id="gameCanvas" width="800" height="600"></canvas>
+        </div>
+      </div>
       <script src="index.js"></script>
 
 </body>
